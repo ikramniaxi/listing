@@ -1,0 +1,590 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Listingweb homepage</title>
+  <link rel="stylesheet" href="./assets/css/listing.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="maindiv container-fluid">
+    <!-- navbar start ------ -->
+    <nav class="navbar navbar-expand-lg mt-3 ">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-5" href="#"><img class="listlogo" src="./assets/images/listinlogo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-5" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5">
+            <li class="nav-item">
+              <a class="nav-link active home" aria-current="page" href="#">Home</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li> -->
+            <li class="nav-item dropdown ms-5">
+              <a class="nav-link dropdown-toggle cat" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Categories
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item cat" href="#">Action</a></li>
+                <li><a class="dropdown-item cat" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider cat">
+                </li>
+                <li><a class="dropdown-item cat" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item ms-5">
+              <a class="nav-link disabled cat">Blogs</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <img class="flag img-fluid mt-2 me-4" src="./assets/images/flag.png" alt="">
+
+            <input class="form-control me-2 py-1 " type="search" placeholder="Search" aria-label="Search">
+            <span class="noticons d-flex">
+              <svg class="not mt-1 me-2" xmlns="http://www.w3.org/2000/svg" width="15" height="28" viewBox="0 0 16 21"
+              fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M14.5154 11.4552L15.5154 13.1152C15.9054 13.7552 15.9754 14.5152 15.7154 15.2052C15.4554 15.8952 14.9154 16.4252 14.2154 16.6552C12.2754 17.3052 10.2354 17.6252 8.19536 17.6252C6.15536 17.6252 4.11536 17.3052 2.17536 16.6452C1.43536 16.3952 0.865358 15.8752 0.625358 15.2052C0.375358 14.5252 0.465358 13.7852 0.865358 13.1152L1.87536 11.4452C2.08536 11.0852 2.27536 10.3852 2.27536 9.97516V7.44516C2.27536 5.12516 3.62536 3.11516 5.57536 2.14516C6.09536 1.21516 7.07536 0.625159 8.16536 0.625159C8.68943 0.619692 9.20535 0.755087 9.6592 1.0172C10.1131 1.2793 10.4882 1.6585 10.7454 2.11516C10.8403 2.16036 10.9339 2.20801 11.026 2.25804C10.6911 2.61564 10.486 3.09637 10.486 3.625C10.486 4.72957 11.3814 5.625 12.486 5.625C12.9341 5.625 13.3479 5.47758 13.6814 5.22858C13.966 5.92966 14.1145 6.682 14.1154 7.44516V9.97516C14.1154 10.3852 14.3054 11.0852 14.5154 11.4552ZM9.90431 20.0766C10.4106 19.7206 10.7951 19.2173 11.0054 18.6352L10.5154 18.6952C10.3803 18.7154 10.2407 18.7266 10.0996 18.7378C10.0317 18.7432 9.96354 18.7487 9.89536 18.7552C9.33536 18.8052 8.76536 18.8352 8.19536 18.8352C7.61536 18.8352 7.03536 18.8052 6.46536 18.7552C6.22536 18.7352 5.98536 18.7052 5.75536 18.6752C5.68956 18.6658 5.62597 18.6586 5.56355 18.6515C5.49316 18.6436 5.42426 18.6358 5.35536 18.6252C5.49536 19.0352 5.73536 19.4352 6.05536 19.7352C6.60536 20.3052 7.38536 20.6252 8.17536 20.6252C8.79433 20.6242 9.39799 20.4327 9.90431 20.0766Z"
+                fill="#F78888" />
+              <circle cx="12.486" cy="3.625" r="2" fill="#60AB00" />
+            </svg>
+            <svg class="not mt-1 me-5" xmlns="http://www.w3.org/2000/svg" width="18" height="28" viewBox="0 0 22 22"
+              fill="none">
+              <path
+                d="M18.8696 6.125C19.599 6.125 20.2984 5.83527 20.8142 5.31954C21.3299 4.80382 21.6196 4.10435 21.6196 3.375C21.6196 2.64565 21.3299 1.94618 20.8142 1.43046C20.2984 0.914731 19.599 0.625 18.8696 0.625C18.1403 0.625 17.4408 0.914731 16.9251 1.43046C16.4093 1.94618 16.1196 2.64565 16.1196 3.375C16.1196 4.10435 16.4093 4.80382 16.9251 5.31954C17.4408 5.83527 18.1403 6.125 18.8696 6.125Z"
+                fill="#60AB00" />
+              <path
+                d="M17.9096 7.52501C17.1309 7.34894 16.4179 6.95585 15.8533 6.39129C15.2888 5.82672 14.8957 5.11377 14.7196 4.33501C14.5896 3.72501 14.5796 3.13501 14.6896 2.57501C14.7214 2.43029 14.7202 2.28027 14.6862 2.13606C14.6522 1.99185 14.5861 1.85714 14.493 1.7419C14.3998 1.62667 14.282 1.53386 14.1481 1.47035C14.0142 1.40685 13.8678 1.37426 13.7196 1.37501H5.86961C3.10961 1.37501 0.869614 3.61501 0.869614 6.37501V13.325C0.869614 16.085 3.10961 18.325 5.86961 18.325H7.36961C7.64961 18.325 8.00961 18.505 8.16961 18.725L9.66961 20.715C10.3296 21.595 11.4096 21.595 12.0696 20.715L13.5696 18.725C13.6628 18.6008 13.7835 18.5 13.9224 18.4306C14.0613 18.3612 14.2144 18.325 14.3696 18.325H15.8796C18.6396 18.325 20.8696 16.095 20.8696 13.335V8.52501C20.8696 7.89501 20.2896 7.43501 19.6696 7.55501C19.1096 7.65501 18.5196 7.65501 17.9096 7.52501ZM6.86961 11.375C6.30961 11.375 5.86961 10.925 5.86961 10.375C5.86961 9.82501 6.30961 9.37501 6.86961 9.37501C7.41961 9.37501 7.86961 9.82501 7.86961 10.375C7.86961 10.925 7.42961 11.375 6.86961 11.375ZM10.8696 11.375C10.3096 11.375 9.86961 10.925 9.86961 10.375C9.86961 9.82501 10.3096 9.37501 10.8696 9.37501C11.4196 9.37501 11.8696 9.82501 11.8696 10.375C11.8696 10.925 11.4296 11.375 10.8696 11.375ZM14.8696 11.375C14.3096 11.375 13.8696 10.925 13.8696 10.375C13.8696 9.82501 14.3096 9.37501 14.8696 9.37501C15.4196 9.37501 15.8696 9.82501 15.8696 10.375C15.8696 10.925 15.4296 11.375 14.8696 11.375Z"
+                fill="#F78888" />
+            </svg>
+            </span>
+           
+            <img class="img-fluid dp me-2" src="./assets/images/dp.png" alt="">
+            <button class="btn post  " type="submit">Post Ad +</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar end ------ -->
+    <!-- image container start  -->
+    <div class="container-fluid mt-5 backimg ">
+      <div class="inputdiv d-flex justify-content-center align-items-center">
+        <form class="me-3 formdiv">
+          <input class="marg" type="text" name="" placeholder="I am Looking for...">
+          <button class="margicon btn" >
+
+            <svg class="" xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"
+              fill="none">
+              <path
+                d="M15 21.25C15.4641 21.25 15.9092 21.0656 16.2374 20.7374C16.5656 20.4092 16.75 19.9641 16.75 19.5C16.75 19.0359 16.5656 18.5908 16.2374 18.2626C15.9092 17.9344 15.4641 17.75 15 17.75C14.5359 17.75 14.0908 17.9344 13.7626 18.2626C13.4344 18.5908 13.25 19.0359 13.25 19.5C13.25 19.9641 13.4344 20.4092 13.7626 20.7374C14.0908 21.0656 14.5359 21.25 15 21.25ZM7 21.25C7.46413 21.25 7.90925 21.0656 8.23744 20.7374C8.56563 20.4092 8.75 19.9641 8.75 19.5C8.75 19.0359 8.56563 18.5908 8.23744 18.2626C7.90925 17.9344 7.46413 17.75 7 17.75C6.53587 17.75 6.09075 17.9344 5.76256 18.2626C5.43437 18.5908 5.25 19.0359 5.25 19.5C5.25 19.9641 5.43437 20.4092 5.76256 20.7374C6.09075 21.0656 6.53587 21.25 7 21.25ZM3.59 2.69L3.39 5.14C3.35 5.61 3.72 6 4.19 6H19.5C19.92 6 20.27 5.68 20.3 5.26C20.43 3.49 19.08 2.05 17.31 2.05H5.02C4.92 1.61 4.72 1.19 4.41 0.84C3.91 0.31 3.21 0 2.49 0H0.75C0.34 0 0 0.34 0 0.75C0 1.16 0.34 1.5 0.75 1.5H2.49C2.8 1.5 3.09 1.63 3.3 1.85C3.51 2.08 3.61 2.38 3.59 2.69ZM19.26 7.5H3.92C3.5 7.5 3.16 7.82 3.12 8.23L2.76 12.58C2.72567 12.983 2.77539 13.3888 2.90603 13.7717C3.03666 14.1545 3.24536 14.506 3.5189 14.804C3.79245 15.102 4.12488 15.3399 4.49516 15.5028C4.86544 15.6656 5.2655 15.7498 5.67 15.75H16.79C18.29 15.75 19.61 14.52 19.72 13.02L20.05 8.35C20.0595 8.24106 20.0461 8.13133 20.0106 8.02791C19.975 7.92448 19.9182 7.82965 19.8438 7.74955C19.7693 7.66945 19.6789 7.60585 19.5784 7.56287C19.4778 7.51988 19.3693 7.49847 19.26 7.5Z"
+                fill="#F78888" />
+            </svg>
+
+          </button>
+        </form>
+        <form class="ms-3 formdiv">
+          <input class="marg" type="text" name="" placeholder="Where..">
+          <button class="margicon btn" >
+            <svg class="" xmlns="http://www.w3.org/2000/svg" width="18" height="21" viewBox="0 0 18 21"
+              fill="none">
+              <path
+                d="M17.4938 6.7C16.4538 2.07 12.4138 0 8.87377 0H8.86377C5.33377 0 1.30377 2.07 0.253774 6.69C-0.926226 11.85 2.23377 16.22 5.09377 18.98C6.1075 19.9612 7.46297 20.5098 8.87377 20.51C10.2338 20.51 11.5938 20 12.6438 18.98C15.5038 16.22 18.6638 11.86 17.4938 6.7ZM11.6238 9.75H9.62377V11.75C9.62377 12.16 9.28377 12.5 8.87377 12.5C8.46377 12.5 8.12377 12.16 8.12377 11.75V9.75H6.12377C5.71377 9.75 5.37377 9.41 5.37377 9C5.37377 8.59 5.71377 8.25 6.12377 8.25H8.12377V6.25C8.12377 5.84 8.46377 5.5 8.87377 5.5C9.28377 5.5 9.62377 5.84 9.62377 6.25V8.25H11.6238C12.0338 8.25 12.3738 8.59 12.3738 9C12.3738 9.41 12.0338 9.75 11.6238 9.75Z"
+                fill="#F78888" />
+            </svg>
+          </button>
+        </form>
+      </div>
+      <div class="d-flex justify-content-center my-3">
+        <button class="search btn px-5 ">search</button>
+      </div>
+
+    </div>
+    <!-- image container end  -->
+
+
+
+
+    
+    <!-- top related container start  ----->
+    <div class="container mt-4">
+      <h2 class="top">Top Categories</h2>
+       
+          <div class="row justify-content-center justify-content-lg-start">
+            <div class="col-lg-2 col-md-4 col-sm-6 mt-3 d-flex justify-content-center justify-content-md-between ">
+              <div class="circle-card ">
+                <img class="img-fluid card-img mt-2" src="./assets/images/carimg.png" class="" alt="Card Image">
+                <div class="card-content ">
+                  <p class="realpara ">Real Estate <br> <small class="add">14,400 Ads</small></p>
+                </div>
+              </div>
+            </div>
+             
+           <div class="col-lg-2 col-md-4 col-sm-6 mt-3 d-flex justify-content-center justify-content-md-between ">
+            <div class="circle-card">
+              <img class="img-fluid card-img mt-2" src="./assets/images/carimg.png" class="" alt="Card Image">
+              <div class="card-content ">
+                <p class="realpara ">Real Estate <br> <small class="add">14,400 Ads</small></p>
+              </div>
+            </div>
+           </div>
+          <div class="col-lg-2 col-md-4 col-sm-6 mt-3 d-flex justify-content-center justify-content-md-between ">
+            <div class="circle-card">
+              <img class="img-fluid card-img mt-2" src="./assets/images/carimg.png" class="" alt="Card Image">
+              <div class="card-content ">
+                <p class="realpara ">Real Estate <br> <small class="add">14,400 Ads</small></p>
+              </div>
+            </div>
+             
+          </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 mt-3 d-flex justify-content-center justify-content-md-between ">
+              <div class="circle-card   ">
+                <img class="img-fluid card-img mt-2" src="./assets/images/carimg.png" class="" alt="Card Image">
+                <div class="card-content ">
+                  <p class="realpara ">Real Estate <br> <small class="add">14,400 Ads</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 mt-3  d-flex justify-content-center justify-content-md-between ">
+          
+               <div class="circle-card  ">
+                <img class="img-fluid card-img mt-2" src="./assets/images/carimg.png" class="" alt="Card Image">
+                <div class="card-content ">
+                  <p class="realpara ">Real Estate <br> <small class="add">14,400 Ads</small></p>
+                </div>
+              </div> 
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-sm-6 mt-3  d-flex justify-content-center justify-content-md-between ">
+          
+              <div class="circle-card  ">
+               <img class="img-fluid card-img mt-2" src="./assets/images/carimg.png" class="" alt="Card Image">
+               <div class="card-content ">
+                 <p class="realpara ">Real Estate <br> <small class="add">14,400 Ads</small></p>
+               </div>
+             </div> 
+           </div>
+           <div class="col-lg-2 col-md-4 col-sm-6 mt-3  d-flex justify-content-center justify-content-md-between ">
+          
+            <div class="circle-card  ">
+             <img class="img-fluid card-img mt-2" src="./assets/images/carimg.png" class="" alt="Card Image">
+             <div class="card-content ">
+               <p class="realpara ">Real Estate <br> <small class="add">14,400 Ads</small></p>
+             </div>
+           </div> 
+         </div>
+         <div class="col-lg-2 col-md-4 col-sm-6 mt-3  d-flex justify-content-center justify-content-md-between ">
+          
+          <div class="circle-card  ">
+           <img class="img-fluid card-img mt-2" src="./assets/images/carimg.png" class="" alt="Card Image">
+           <div class="card-content ">
+             <p class="realpara ">Real Estate <br> <small class="add">14,400 Ads</small></p>
+           </div>
+         </div> 
+       </div>
+       <div class="col-lg-2 col-md-4 col-sm-6 mt-3  d-flex justify-content-center justify-content-md-between ">
+          
+        <div class="circle-card  ">
+         <img class="img-fluid card-img mt-2" src="./assets/images/carimg.png" class="" alt="Card Image">
+         <div class="card-content ">
+           <p class="realpara ">Real Estate <br> <small class="add">14,400 Ads</small></p>
+         </div>
+       </div> 
+     </div>
+     <div class="col-lg-2 col-md-4 col-sm-6 mt-3  d-flex justify-content-center justify-content-md-between ">
+          
+      <div class="circle-card  ">
+       <img class="img-fluid card-img mt-2" src="./assets/images/carimg.png" class="" alt="Card Image">
+       <div class="card-content ">
+         <p class="realpara ">Real Estate <br> <small class="add">14,400 Ads</small></p>
+       </div>
+     </div> 
+   </div>
+   <div class="col-lg-2 col-md-4 col-sm-6 mt-3  d-flex justify-content-center justify-content-md-between ">
+          
+    <div class="circle-card  ">
+     <img class="img-fluid card-img mt-2" src="./assets/images/carimg.png" class="" alt="Card Image">
+     <div class="card-content ">
+       <p class="realpara ">Real Estate <br> <small class="add">14,400 Ads</small></p>
+     </div>
+   </div> 
+ </div>
+ <div class="col-lg-2 col-md-4 col-sm-6 mt-3  d-flex justify-content-center justify-content-md-between ">
+          
+  <div class="circle-card  ">
+   <img class="img-fluid card-img mt-2" src="./assets/images/carimg.png" class="" alt="Card Image">
+   <div class="card-content ">
+     <p class="realpara ">Real Estate <br> <small class="add">14,400 Ads</small></p>
+   </div>
+ </div> 
+</div>
+<div class="col-lg-2 col-md-4 col-sm-6 mt-3  d-flex justify-content-center justify-content-md-between ">
+          
+  <div class="circle-card  ">
+   <img class="img-fluid card-img mt-2" src="./assets/images/carimg.png" class="" alt="Card Image">
+   <div class="card-content ">
+     <p class="realpara ">Real Estate <br> <small class="add">14,400 Ads</small></p>
+   </div>
+ </div> 
+</div>
+<div class="col-lg-2 col-md-4 col-sm-6 mt-3  d-flex justify-content-center justify-content-md-between ">
+          
+  <div class="circle-card  ">
+   <img class="img-fluid card-img mt-2" src="./assets/images/carimg.png" class="" alt="Card Image">
+   <div class="card-content ">
+     <p class="realpara ">Real Estate <br> <small class="add">14,400 Ads</small></p>
+   </div>
+ </div> 
+</div>
+<div class="col-lg-2 col-md-4 col-sm-6 mt-3  d-flex justify-content-center justify-content-md-between ">
+          
+  <div class="circle-card  ">
+   <img class="img-fluid card-img mt-2" src="./assets/images/carimg.png" class="" alt="Card Image">
+   <div class="card-content ">
+     <p class="realpara ">Real Estate <br> <small class="add">14,400 Ads</small></p>
+   </div>
+ </div> 
+</div>
+<div class="col-lg-2 col-md-4 col-sm-6 mt-3  d-flex justify-content-center justify-content-md-between ">
+          
+  <div class="circle-card  ">
+   <img class="img-fluid card-img mt-2" src="./assets/images/carimg.png" class="" alt="Card Image">
+   <div class="card-content ">
+     <p class="realpara ">Real Estate <br> <small class="add">14,400 Ads</small></p>
+   </div>
+ </div> 
+</div>
+<div class="col-lg-2 col-md-4 col-sm-6 mt-3  d-flex justify-content-center justify-content-md-between ">
+          
+  <div class="circle-card  ">
+   <img class="img-fluid card-img mt-2" src="./assets/images/carimg.png" class="" alt="Card Image">
+   <div class="card-content ">
+     <p class="realpara ">Real Estate <br> <small class="add">14,400 Ads</small></p>
+   </div>
+ </div> 
+</div>
+ 
+
+       
+       
+    </div>
+    <!-- top related container end  -->
+    <!-- featured container start  ------------>
+    <div class="container mt-5">
+      <h2 class="top">Featured </h2>
+      <div class="row mt-4">
+        <div class=" col-lg-3 col-md-6 ">
+        
+          <div class="card my-2 cardone">
+            <p class="text-dark sponsored">Sponsored</p>
+            <img class="img-fluid" src="./assets/images/fcarimg.png" class="card-img-top" alt="...">
+            <div class="overtext d-flex justify-content-between ">
+              <p class="price">$ 20,000</p>
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
+                <path d="M10 18.35L8.55 17.03C3.4 12.36 0 9.27 0 5.5C0 2.41 2.42 0 5.5 0C7.24 0 8.91 0.81 10 2.08C11.09 0.81 12.76 0 14.5 0C17.58 0 20 2.41 20 5.5C20 9.27 16.6 12.36 11.45 17.03L10 18.35Z" fill="white"/>
+                </svg></span>
+            </div>
+            <div class="card-body cardback">
+            
+<h6 class="maike">Chevelotte Maike</h6>
+<p class="adress"><span class="me-2"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14" fill="none">
+  <path d="M6 7.13376C6.4125 7.13376 6.76575 6.99394 7.05975 6.71429C7.35375 6.43465 7.5005 6.09889 7.5 5.70701C7.5 5.31465 7.353 4.97865 7.059 4.69901C6.765 4.41936 6.412 4.27978 6 4.28025C5.5875 4.28025 5.23425 4.42008 4.94025 4.69972C4.64625 4.97936 4.4995 5.31513 4.5 5.70701C4.5 6.09936 4.647 6.43536 4.941 6.71501C5.235 6.99465 5.588 7.13423 6 7.13376ZM6 14C5.9 14 5.8 13.9822 5.7 13.9465C5.6 13.9108 5.5125 13.8633 5.4375 13.8038C3.6125 12.2701 2.25 10.8462 1.35 9.53213C0.45 8.21809 0 6.99061 0 5.84968C0 4.06624 0.60325 2.64544 1.80975 1.58726C3.01625 0.529087 4.413 0 6 0C7.5875 0 8.9845 0.529087 10.191 1.58726C11.3975 2.64544 12.0005 4.06624 12 5.84968C12 6.99108 11.55 8.2188 10.65 9.53284C9.75 10.8469 8.3875 12.2705 6.5625 13.8038C6.4875 13.8633 6.4 13.9108 6.3 13.9465C6.2 13.9822 6.1 14 6 14Z" fill="black"/>
+  </svg></span>264 Gregory Ave.Southfield, MI 48076</p>
+<div class="fueldiv d-flex justify-content-between">
+  <div class="milage">
+    <p>Milage</p>
+    <p>Version</p>
+    <p>Fuel</p>
+  </div>
+  <div class="kmdiv">
+    <p class="automatic">100,325 Kms</p>
+    <p class="automatic">Automatic</p>
+    <p class="automatic">Petrol</p>
+  </div>
+</div>
+
+            </div>
+          </div>
+         
+          
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card  my-2  cardone">
+            <p class="text-dark sponsored">Sponsored</p>
+            <img class="img-fluid" src="./assets/images/fcarimg.png" class="card-img-top" alt="...">
+            <div class="overtext d-flex justify-content-between ">
+              <p class="price">$ 20,000</p>
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
+                <path d="M10 18.35L8.55 17.03C3.4 12.36 0 9.27 0 5.5C0 2.41 2.42 0 5.5 0C7.24 0 8.91 0.81 10 2.08C11.09 0.81 12.76 0 14.5 0C17.58 0 20 2.41 20 5.5C20 9.27 16.6 12.36 11.45 17.03L10 18.35Z" fill="white"/>
+                </svg></span>
+            </div>
+            <div class="card-body cardback">
+            
+<h6 class="maike">Chevelotte Maike</h6>
+<p class="adress"><span class="me-2"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14" fill="none">
+  <path d="M6 7.13376C6.4125 7.13376 6.76575 6.99394 7.05975 6.71429C7.35375 6.43465 7.5005 6.09889 7.5 5.70701C7.5 5.31465 7.353 4.97865 7.059 4.69901C6.765 4.41936 6.412 4.27978 6 4.28025C5.5875 4.28025 5.23425 4.42008 4.94025 4.69972C4.64625 4.97936 4.4995 5.31513 4.5 5.70701C4.5 6.09936 4.647 6.43536 4.941 6.71501C5.235 6.99465 5.588 7.13423 6 7.13376ZM6 14C5.9 14 5.8 13.9822 5.7 13.9465C5.6 13.9108 5.5125 13.8633 5.4375 13.8038C3.6125 12.2701 2.25 10.8462 1.35 9.53213C0.45 8.21809 0 6.99061 0 5.84968C0 4.06624 0.60325 2.64544 1.80975 1.58726C3.01625 0.529087 4.413 0 6 0C7.5875 0 8.9845 0.529087 10.191 1.58726C11.3975 2.64544 12.0005 4.06624 12 5.84968C12 6.99108 11.55 8.2188 10.65 9.53284C9.75 10.8469 8.3875 12.2705 6.5625 13.8038C6.4875 13.8633 6.4 13.9108 6.3 13.9465C6.2 13.9822 6.1 14 6 14Z" fill="black"/>
+  </svg></span>264 Gregory Ave.Southfield, MI 48076</p>
+<div class="fueldiv d-flex justify-content-between">
+  <div class="milage">
+    <p>Milage</p>
+    <p>Version</p>
+    <p>Fuel</p>
+  </div>
+  <div class="kmdiv">
+    <p class="automatic">100,325 Kms</p>
+    <p class="automatic">Automatic</p>
+    <p class="automatic">Petrol</p>
+  </div>
+</div>
+
+            </div>
+          
+        </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="card my-2 cardone" >
+            <p class="text-dark sponsored">Sponsored</p>
+            <img class="img-fluid" src="./assets/images/fcarimg.png" class="card-img-top" alt="...">
+            <div class="overtext d-flex justify-content-between ">
+              <p class="price">$ 20,000</p>
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
+                <path d="M10 18.35L8.55 17.03C3.4 12.36 0 9.27 0 5.5C0 2.41 2.42 0 5.5 0C7.24 0 8.91 0.81 10 2.08C11.09 0.81 12.76 0 14.5 0C17.58 0 20 2.41 20 5.5C20 9.27 16.6 12.36 11.45 17.03L10 18.35Z" fill="white"/>
+                </svg></span>
+            </div>
+            <div class="card-body cardback">
+            
+<h6 class="maike">Chevelotte Maike</h6>
+<p class="adress"><span class="me-2"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14" fill="none">
+  <path d="M6 7.13376C6.4125 7.13376 6.76575 6.99394 7.05975 6.71429C7.35375 6.43465 7.5005 6.09889 7.5 5.70701C7.5 5.31465 7.353 4.97865 7.059 4.69901C6.765 4.41936 6.412 4.27978 6 4.28025C5.5875 4.28025 5.23425 4.42008 4.94025 4.69972C4.64625 4.97936 4.4995 5.31513 4.5 5.70701C4.5 6.09936 4.647 6.43536 4.941 6.71501C5.235 6.99465 5.588 7.13423 6 7.13376ZM6 14C5.9 14 5.8 13.9822 5.7 13.9465C5.6 13.9108 5.5125 13.8633 5.4375 13.8038C3.6125 12.2701 2.25 10.8462 1.35 9.53213C0.45 8.21809 0 6.99061 0 5.84968C0 4.06624 0.60325 2.64544 1.80975 1.58726C3.01625 0.529087 4.413 0 6 0C7.5875 0 8.9845 0.529087 10.191 1.58726C11.3975 2.64544 12.0005 4.06624 12 5.84968C12 6.99108 11.55 8.2188 10.65 9.53284C9.75 10.8469 8.3875 12.2705 6.5625 13.8038C6.4875 13.8633 6.4 13.9108 6.3 13.9465C6.2 13.9822 6.1 14 6 14Z" fill="black"/>
+  </svg></span>264 Gregory Ave.Southfield, MI 48076</p>
+<div class="fueldiv d-flex justify-content-between">
+  <div class="milage">
+    <p>Milage</p>
+    <p>Version</p>
+    <p>Fuel</p>
+  </div>
+  <div class="kmdiv">
+    <p class="automatic">100,325 Kms</p>
+    <p class="automatic">Automatic</p>
+    <p class="automatic">Petrol</p>
+  </div>
+</div>
+
+            </div>
+          </div>
+        </div>
+         <div class="col-lg-3 col-md-6">
+          <div class="card ms-0  my-2 cardone" >
+            <p class="text-dark sponsored">Sponsored</p>
+            <img class="img-fluid" src="./assets/images/fcarimg.png" class="card-img-top" alt="...">
+            <div class="overtext d-flex justify-content-between ">
+              <p class="price">$ 20,000</p>
+              <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
+                <path d="M10 18.35L8.55 17.03C3.4 12.36 0 9.27 0 5.5C0 2.41 2.42 0 5.5 0C7.24 0 8.91 0.81 10 2.08C11.09 0.81 12.76 0 14.5 0C17.58 0 20 2.41 20 5.5C20 9.27 16.6 12.36 11.45 17.03L10 18.35Z" fill="white"/>
+                </svg></span>
+            </div>
+            <div class="card-body cardback">
+            
+<h6 class="maike">Chevelotte Maike</h6>
+<p class="adress"><span class="me-2"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" viewBox="0 0 12 14" fill="none">
+  <path d="M6 7.13376C6.4125 7.13376 6.76575 6.99394 7.05975 6.71429C7.35375 6.43465 7.5005 6.09889 7.5 5.70701C7.5 5.31465 7.353 4.97865 7.059 4.69901C6.765 4.41936 6.412 4.27978 6 4.28025C5.5875 4.28025 5.23425 4.42008 4.94025 4.69972C4.64625 4.97936 4.4995 5.31513 4.5 5.70701C4.5 6.09936 4.647 6.43536 4.941 6.71501C5.235 6.99465 5.588 7.13423 6 7.13376ZM6 14C5.9 14 5.8 13.9822 5.7 13.9465C5.6 13.9108 5.5125 13.8633 5.4375 13.8038C3.6125 12.2701 2.25 10.8462 1.35 9.53213C0.45 8.21809 0 6.99061 0 5.84968C0 4.06624 0.60325 2.64544 1.80975 1.58726C3.01625 0.529087 4.413 0 6 0C7.5875 0 8.9845 0.529087 10.191 1.58726C11.3975 2.64544 12.0005 4.06624 12 5.84968C12 6.99108 11.55 8.2188 10.65 9.53284C9.75 10.8469 8.3875 12.2705 6.5625 13.8038C6.4875 13.8633 6.4 13.9108 6.3 13.9465C6.2 13.9822 6.1 14 6 14Z" fill="black"/>
+  </svg></span>264 Gregory Ave.Southfield, MI 48076</p>
+<div class="fueldiv d-flex justify-content-between">
+  <div class="milage">
+    <p>Milage</p>
+    <p>Version</p>
+    <p>Fuel</p>
+  </div>
+  <div class="kmdiv">
+    <p class="automatic">100,325 Kms</p>
+    <p class="automatic">Automatic</p>
+    <p class="automatic">Petrol</p>
+  </div>
+</div>
+
+            </div>
+          </div>
+         </div>
+      </div>
+    </div>
+    <!-- featured container end  ------------>
+<!-- Popular categories container start  ----->
+<div class="container mt-5">
+  <h2 class="top">Popular categories</h2>
+  <div class="row carscont my-3">
+     
+    <div class="col-md-2 mt-2  cardiv ">
+      <div class="carpara">  
+<div style="display: flex; justify-content: center;">
+  <p class="" style="padding-top: 240px;">Cars</p>
+</div>
+        <img class=" car" src="./assets/images/pcars.png" alt="">  
+    </div>
+</div>
+    <div class="col-md-5 mt-2  cardiv ">
+      <div class="carpara">  
+<div style="display: flex; justify-content: center;">
+  <p class="" style="padding-top: 240px;">Electronics</p>
+</div>
+<img class="elctric" src="./assets/images/elecimg.png" alt="">    
+</div>
+</div>
+<div class="col-md-5 mt-2  cardiv ">
+  <div class="carpara">  
+<div style="display: flex; justify-content: center;">
+<p class="" style="padding-top: 240px;">Electronics</p>
+</div>
+<img class="elctric" src="./assets/images/elecimg.png" alt="">    
+</div>
+</div>  
+  </div>
+
+  <div class="row carscont my-3">
+    <div class="col-md-5 mt-2  cardiv ">
+      <div class="carpara">  
+    <div style="display: flex; justify-content: center;">
+    <p class="" style="padding-top: 240px;">Electronics</p>
+    </div>
+    <img class="elctric" src="./assets/images/elecimg.png" alt="">    
+    </div>
+    </div>
+  <div class="col-md-5 mt-2  cardiv ">
+    <div class="carpara">  
+  <div style="display: flex; justify-content: center;">
+  <p class="" style="padding-top: 240px;">Electronics</p>
+  </div>
+  <img class="elctric" src="./assets/images/elecimg.png" alt="">    
+  </div>
+  </div>
+  <div class="col-md-2 mt-2  cardiv ">
+      <div class="carpara">  
+<div style="display: flex; justify-content: center;">
+  <p class="" style="padding-top: 240px;">Cars</p>
+</div>
+        <img class=" car" src="./assets/images/pcars.png" alt="">  
+    </div>
+</div>
+  
+ 
+</div>
+</div>
+<!-- Popular categories container end  ----->
+
+
+
+  </div>
+
+
+  <!-- footer start  ------------------->
+<div class="container-fluid footerclr">
+  <div class="row ">
+    <div class="col-sm-12 justify-content-sm-start  col-md-3 d-flex flex-column mt-5 ">
+      <!-- <div class="companydiv d-flex flex-column ms-5 mt-4"> -->
+        <h5 class="comphead">Company</h5>
+        <a class="about" href="#">About Us</a>
+        <a class="about" href="#">Why Choose us</a>
+        <a class="about" href="#">Pricing</a>
+        <a class="about" href="#">Testimonial</a>
+      <!-- </div> -->
+    </div>
+      <div class="col-md-3 d-flex flex-column mt-5">
+        <!-- <div class="resources d-flex flex-column me-5  mt-4"> -->
+          <h5 class="comphead">Resources</h5>
+          <a class="about" href="#">Privacy Policy</a>
+          <a class="about" href="#">Terms and Condition</a>
+          <a class="about" href="#">Contact Us</a>
+          <!-- <a class="about" href="#">Testimonial</a> -->
+         <!-- </div> -->
+      </div>
+    
+    
+    <div class="col-sm-12 justify-content-start col-md-6 mt-5 ">
+      <div class="listat">
+       
+        <div class="emaildiv">
+          <h4 class="list">List AT</h4>
+          <p class="subpara">Subscribe to our Newsletter</p>
+          <div class="overbtn">
+            <input class="py-2 px-3 mt-3 inputdiv" type="email" name="email" placeholder="Enter your email" />
+            <div class="btn subdiv ">
+              <button class="sub py-2 mb-3 px-4">Subscribe</button>
+            </div>
+          </div>
+       
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copycont d-flex justify-content-center flex-column align-items-center">
+    <p class="copypara">Copyright @2023</p>
+    <div class="socialicons  ">
+      <a class="me-2" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
+        <g clip-path="url(#clip0_37_6247)">
+        <path d="M29.2062 15.0718C29.2062 6.78752 22.6681 0.0717773 14.6031 0.0717773C6.53801 0.0717773 0 6.78752 0 15.0718C0 22.5587 5.34011 28.7643 12.3213 29.8896V19.4078H8.61353V15.0718H12.3213V11.7671C12.3213 8.00774 14.5015 5.93117 17.8371 5.93117C19.4344 5.93117 21.106 6.22414 21.106 6.22414V9.91556H19.2647C17.4507 9.91556 16.8848 11.0719 16.8848 12.2593V15.0718H20.9349L20.2874 19.4078H16.8848V29.8896C23.866 28.7643 29.2062 22.5587 29.2062 15.0718Z" fill="white"/>
+        </g>
+        <defs>
+        <clipPath id="clip0_37_6247">
+        <rect width="29.2062" height="30.0001" fill="white" transform="translate(0 0.0717773)"/>
+        </clipPath>
+        </defs>
+        </svg></a>
+        <a class="ms-1" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
+          <g clip-path="url(#clip0_37_6245)">
+          <path d="M9.4415 27.2593C20.46 27.2593 26.4883 17.8801 26.4883 9.74906C26.4883 9.48539 26.4826 9.21586 26.4712 8.95218C27.6439 8.08106 28.6559 7.00205 29.4597 5.76585C28.3675 6.26498 27.208 6.59095 26.0206 6.73265C27.2708 5.96286 28.2069 4.75356 28.6554 3.32893C27.4792 4.04492 26.193 4.54999 24.8517 4.82248C23.9481 3.83617 22.7532 3.18311 21.452 2.96428C20.1507 2.74545 18.8155 2.97303 17.6528 3.61184C16.4901 4.25065 15.5646 5.26511 15.0195 6.49837C14.4744 7.73163 14.3399 9.115 14.637 10.4346C12.2554 10.3119 9.92557 9.67637 7.79844 8.56936C5.67131 7.46235 3.79441 5.90852 2.28941 4.00862C1.52449 5.36328 1.29043 6.96628 1.63479 8.49185C1.97914 10.0174 2.87609 11.351 4.14332 12.2217C3.19196 12.1907 2.26143 11.9276 1.42863 11.4541V11.5303C1.42778 12.9519 1.90624 14.33 2.78268 15.4302C3.65913 16.5304 4.87946 17.285 6.23624 17.5655C5.35495 17.8132 4.43 17.8493 3.53296 17.671C3.91582 18.8936 4.66072 19.9629 5.6637 20.7297C6.66669 21.4965 7.87771 21.9225 9.12776 21.9483C7.00555 23.6607 4.38399 24.5894 1.68533 24.585C1.20674 24.5843 0.728626 24.5542 0.25354 24.4948C2.99509 26.3015 6.18425 27.261 9.4415 27.2593Z" fill="white"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_37_6245">
+          <rect width="29.2062" height="30.0001" fill="white" transform="translate(0.25354 0.0717773)"/>
+          </clipPath>
+          </defs>
+          </svg></a>
+          <a class="ms -2" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
+            <g clip-path="url(#clip0_37_6240)">
+            <path d="M15.1102 2.77296C19.0119 2.77296 19.474 2.79053 21.0084 2.86085C22.4345 2.9253 23.2046 3.1714 23.718 3.37647C24.3968 3.64601 24.8874 3.97413 25.3951 4.49562C25.9084 5.02296 26.2222 5.52101 26.4846 6.21828C26.6842 6.74563 26.9238 7.5425 26.9866 9.00149C27.055 10.5835 27.0721 11.0581 27.0721 15.0601C27.0721 19.0679 27.055 19.5425 26.9866 21.1187C26.9238 22.5836 26.6842 23.3746 26.4846 23.9019C26.2222 24.5992 25.9027 25.1031 25.3951 25.6246C24.8817 26.1519 24.3968 26.4742 23.718 26.7437C23.2046 26.9488 22.4288 27.1949 21.0084 27.2594C19.4683 27.3297 19.0062 27.3472 15.1102 27.3472C11.2084 27.3472 10.7463 27.3297 9.21188 27.2594C7.7858 27.1949 7.01572 26.9488 6.50233 26.7437C5.82351 26.4742 5.33294 26.1461 4.82526 25.6246C4.31187 25.0972 3.99813 24.5992 3.73573 23.9019C3.53608 23.3746 3.2965 22.5777 3.23375 21.1187C3.1653 19.5367 3.14818 19.0621 3.14818 15.0601C3.14818 11.0523 3.1653 10.5777 3.23375 9.00149C3.2965 7.53664 3.53608 6.74563 3.73573 6.21828C3.99813 5.52101 4.31757 5.0171 4.82526 4.49562C5.33865 3.96827 5.82351 3.64601 6.50233 3.37647C7.01572 3.1714 7.79151 2.9253 9.21188 2.86085C10.7463 2.79053 11.2084 2.77296 15.1102 2.77296ZM15.1102 0.0717773C11.1457 0.0717773 10.6494 0.0893555 9.09209 0.159668C7.54052 0.229981 6.47381 0.487794 5.54971 0.856936C4.58567 1.24366 3.76996 1.75342 2.95994 2.59132C2.14422 3.42335 1.64795 4.26124 1.27146 5.24562C0.912087 6.2007 0.661097 7.29055 0.592645 8.8843C0.524193 10.4898 0.50708 10.9995 0.50708 15.0718C0.50708 19.1441 0.524193 19.6539 0.592645 21.2535C0.661097 22.8472 0.912087 23.9429 1.27146 24.8922C1.64795 25.8824 2.14422 26.7203 2.95994 27.5523C3.76996 28.3844 4.58567 28.9 5.544 29.2808C6.47381 29.65 7.53481 29.9078 9.08639 29.9781C10.6437 30.0484 11.1399 30.066 15.1045 30.066C19.069 30.066 19.5652 30.0484 21.1225 29.9781C22.6741 29.9078 23.7408 29.65 24.6649 29.2808C25.6232 28.9 26.439 28.3844 27.249 27.5523C28.059 26.7203 28.561 25.8824 28.9317 24.898C29.2911 23.9429 29.5421 22.8531 29.6106 21.2593C29.679 19.6597 29.6961 19.15 29.6961 15.0777C29.6961 11.0054 29.679 10.4956 29.6106 8.89602C29.5421 7.30227 29.2911 6.20656 28.9317 5.25734C28.5724 4.26124 28.0761 3.42335 27.2604 2.59132C26.4504 1.75928 25.6346 1.24366 24.6763 0.862795C23.7465 0.493654 22.6855 0.23584 21.1339 0.165528C19.5709 0.0893555 19.0747 0.0717773 15.1102 0.0717773Z" fill="white"/>
+            <path d="M15.1102 7.3667C10.9688 7.3667 7.60898 10.8179 7.60898 15.0718C7.60898 19.3257 10.9688 22.7769 15.1102 22.7769C19.2515 22.7769 22.6114 19.3257 22.6114 15.0718C22.6114 10.8179 19.2515 7.3667 15.1102 7.3667ZM15.1102 20.0699C12.4234 20.0699 10.2444 17.8316 10.2444 15.0718C10.2444 12.312 12.4234 10.0737 15.1102 10.0737C17.7969 10.0737 19.976 12.312 19.976 15.0718C19.976 17.8316 17.7969 20.0699 15.1102 20.0699Z" fill="white"/>
+            <path d="M24.6592 7.06201C24.6592 8.05811 23.872 8.86084 22.908 8.86084C21.9382 8.86084 21.1567 8.05225 21.1567 7.06201C21.1567 6.06592 21.9439 5.26318 22.908 5.26318C23.872 5.26318 24.6592 6.07178 24.6592 7.06201Z" fill="white"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_37_6240">
+            <rect width="29.2062" height="30.0001" fill="white" transform="translate(0.50708 0.0717773)"/>
+            </clipPath>
+            </defs>
+            </svg></a>
+            <a class="ms-2" href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31" fill="none">
+              <g clip-path="url(#clip0_37_6237)">
+              <path d="M27.8048 0.0717773H2.91686C1.72465 0.0717773 0.76062 1.03858 0.76062 2.23389V27.9039C0.76062 29.0992 1.72465 30.0719 2.91686 30.0719H27.8048C28.997 30.0719 29.9668 29.0992 29.9668 27.9097V2.23389C29.9668 1.03858 28.997 0.0717773 27.8048 0.0717773ZM9.42549 25.6363H5.0902V11.3159H9.42549V25.6363ZM7.25785 9.36477C5.86599 9.36477 4.74224 8.21047 4.74224 6.78664C4.74224 5.36281 5.86599 4.20851 7.25785 4.20851C8.644 4.20851 9.76775 5.36281 9.76775 6.78664C9.76775 8.20461 8.644 9.36477 7.25785 9.36477ZM25.6486 25.6363H21.319V18.6753C21.319 17.0171 21.2905 14.8785 19.0658 14.8785C16.8126 14.8785 16.4703 16.689 16.4703 18.5582V25.6363H12.1465V11.3159H16.2992V13.273H16.3562C16.9324 12.148 18.3471 10.9585 20.452 10.9585C24.8386 10.9585 25.6486 13.9234 25.6486 17.7789V25.6363Z" fill="white"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_37_6237">
+              <rect width="29.2062" height="30.0001" fill="white" transform="translate(0.76062 0.0717773)"/>
+              </clipPath>
+              </defs>
+              </svg></a>
+    </div>
+  </div>
+</div>
+<!-- footer end  ------------------->
+ 
+
+
+
+
+
+ 
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
